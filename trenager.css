@@ -1,0 +1,21 @@
+.title {
+  color: rgb(132, 0, 255);
+  text-align: center;
+}
+
+.text-title {
+  text-align: center;
+  font-size: 26px;
+  color: rgb(51, 0, 255);
+}
+.nav-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding-top: 50px;
+  padding-left: 50px;
+  font-size: 26px;
+}
+.linc {
+  color: cadetblue;
+}

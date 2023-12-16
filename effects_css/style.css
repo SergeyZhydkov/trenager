@@ -1,0 +1,31 @@
+:root {
+  --angle: 90deg;
+}
+body {
+  background-color: rgb(129, 242, 142);
+}
+.box {
+  width: 300px;
+  height: 250px;
+  font-size: 3vw;
+  margin: max(1rem, 3vw);
+  border: 0.35rem solid red;
+  padding: 3vw;
+  border-image: conic-gradient(
+      from var(--angle),
+      rgba(168, 239, 255, 0.1),
+      rgba(168, 239, 255, 1) 0.1turn,
+      rgba(168, 239, 255, 1) 0.15turn,
+      rgba(168, 239, 255, 0.1) 0.25turn
+    )
+    30;
+  animation: borderRotate 2.5s linear infinite forwards;
+}
+@keyframes borderRotate {
+  100% {
+    --angle: 420deg;
+  }
+}
+.btn {
+  background-color: blue;
+}
