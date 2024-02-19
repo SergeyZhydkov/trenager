@@ -161,5 +161,19 @@ function handlerScroll() {
   counterScroll += 1;
   console.log("counterScroll", counterScroll);
 }
-card.addEventListener("click", openModal);
-function openModal() {}
+
+// modal
+const refs = {
+  backgroundModal: document.querySelector(".modalBackground"),
+  closeMod: document.querySelector(".modClose"),
+  modalContent: document.querySelector(".modalWindow"),
+};
+function closeModal(e) {
+  // if (e.target === refs.closeMod) console.log(e.target);
+  refs.backgroundModal.style.display = "none";
+}
+refs.closeMod.addEventListener("click", closeModal);
+// refs.backgroundModal.addEventListener("click", closeModal);
+const content = createMarkup(arr);
+console.log(content);
+refs.modalContent.innerHTML(content);
