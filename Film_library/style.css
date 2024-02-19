@@ -1,3 +1,8 @@
+.titleMovieLibrary {
+  color: black;
+  font-size: 38px;
+  text-align: center;
+}
 .button-container {
   display: flex;
   justify-content: center;
@@ -75,5 +80,41 @@
   font-size: 1.2em;
   color: #777;
 }
-
+/* modal */
+.modalBackground {
+  /* display: none; */
+  background: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  /* указываем z-индекс для корректного наслаивания */
+  z-index: 5;
+}
+body {
+  overflow-x: hidden;
+}
+.modalActive {
+  position: absolute;
+  width: 1050px;
+  height: 895px;
+  top: calc(50% - 350px);
+  left: calc(50% - 525px);
+  border-radius: 10px;
+  background-color: rgb(255, 255, 255);
+  cursor: default;
+  padding: 40px 20px;
+}
+.modalClose {
+  font-family: var(--font-regular);
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+.modalWindow {
+  position: relative;
+}
 /* ------------------------- */

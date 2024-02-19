@@ -87,6 +87,7 @@ const options = {
   root: null,
   rootMargin: "300px",
 };
+const card = document.querySelector(".movie-card");
 const observer = new IntersectionObserver(handlerLoadMore, options);
 let page = 1;
 
@@ -160,3 +161,5 @@ function handlerScroll() {
   counterScroll += 1;
   console.log("counterScroll", counterScroll);
 }
+card.addEventListener("click", openModal);
+function openModal() {}
